@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+</head>
+
+<body>
+    <main>
+        <div class="firstSection" id="home">
+            <div class="flex">
+                <div class="sunnySideImage">
+                    <a href="#logo"><img src="./images/logo.svg" alt="Image"></a>
+                </div>
+                <div class="links" id="links">
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact" class="contact">Contact</a>
+                    <div class="sideStuffOnToggle"></div>
+                </div>
+                <div class="toggleMenu" onclick="toggle()">
+                    <img src="./images/icon-hamburger.svg" alt="Image">
+                </div>
+            </div>
+            <h1 class="creative">
+                We &nbsp;&nbsp;are &nbsp;&nbsp;creatives
+            </h1>
+            <div class="arrow">
+                <img src="./images/icon-arrow-down.svg" alt="ArrowImage">
+            </div>
+        </div>
+        <div class="secondSection" id="about">
+            <div class="transform">
+                <div class="adjust">
+                    <h1 class="brandHeading">
+                        Transform your brand
+                    </h1>
+                    <p class="brand">
+                        We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
+                    </p>
+                    <a href="#learn" class="hover-underline-animation"> Learn more</a>
+                </div>
+            </div>
+            <div class="egg">
+                <img src="./images/desktop/image-transform.jpg" alt="Image" class="eggImage">
+            </div>
+        </div>
+        <div class="thirdSection">
+            <div class="standout">
+                <img src="./images/desktop/image-stand-out.jpg" alt="Image" class="standoutImage">
+            </div>
+            <div class="transform">
+                <div class="adjust">
+                    <h1 class="brandHeading">
+                        Stand out to the right audience
+                    </h1>
+                    <p class="brand">
+                        Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+                    <a href="#learn" class="hover-underline-animation-second"> Learn more</a>
+                </div>
+            </div>
+        </div>
+        <div class="fourthSection" id="services">
+            <div class="image1">
+                <div class="complicating">
+                    <h1 class="font">
+                        Graphic design
+                    </h1>
+                    <p class="brand2">
+                        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+                    </p>
+                </div>
+            </div>
+            <div class="image2">
+                <div class="complicating">
+                    <h1 class="font2">
+                        Photography
+                    </h1>
+                    <p class="brand21">
+                        Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="fifthSection">
+            <h2 class="testimonials">Client &nbsp;&nbsp; testimonials</h2>
+            <div class="grid">
+                <div class="testimonial1">
+                    <img src="./images/image-emily.jpg" alt="Image">
+                    <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                    <h3> Emily R. </h3>
+                    <p class="under"> Marketing Director</p>
+                </div>
+                <div class="testimonial3">
+                    <img src="./images/image-thomas.jpg" alt="Image">
+                    <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+                        <h3> Thomas S. </h3>
+                        <p class="under"> Chief Operating Officer</p>
+                </div>
+                <div class="testimonial3">
+                    <img src="./images/image-jennie.jpg" alt="Image">
+                    <p> Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+                        <h3> Jennie F. </h3>
+                        <p class="under"> Business Owner </p>
+                </div>
+            </div>
+        </div>
+        <div class="sixthSection">
+            <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="Image" class="first">
+            <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="Image" class="mobileFirst">
+            <img src="./images/desktop/image-gallery-orange.jpg" alt="Image" class="second">
+            <img src="./images/mobile/image-gallery-orange.jpg" alt="Image" class="mobileSecond">
+            <img src="./images/desktop/image-gallery-cone.jpg" alt="Image" class="third">
+            <img src="./images/mobile/image-gallery-cone.jpg" alt="Image" class="mobileThird">
+            <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="Image" class="fourth">
+            <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="Image" class="mobileFourth">
+        </div>
+        <footer class="lastSection">
+            <a href="#home"><img src="./images/logo.svg" alt="Image" class="footerImage"></a>
+            <div class="flexing">
+                <div class="link1">
+                    <a href="#about">About</a>
+                </div>
+                <div class="link2">
+                    <a href="#services">Services</a>
+                </div>
+                <div class="link3">
+                    <a href="#projects">Projects</a>
+                </div>
+            </div>
+            <div id="contact" class="contactLinks">
+                <a href="#facebook" class="fb"><img src="./images/icon-facebook.svg" alt="Image"></a>
+                <a href="#insta" class="insta"><img src="./images/icon-instagram.svg" alt="Image"></a>
+                <a href="#twitter" class="twit"><img src="./images/icon-twitter.svg" alt="Image"></a>
+                <a href="#pintrest" class="pin"><img src="./images/icon-pinterest.svg" alt="Image"></a>
+            </div>
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.frontendmentor.io/profile/Muhammad-Habban">Muhammad Habban</a>.
+            </div>
+        </footer>
+    </main>
+    <script src="java.js"></script>
+</body>
+
+</html>
